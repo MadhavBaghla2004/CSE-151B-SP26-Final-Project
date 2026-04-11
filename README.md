@@ -3,8 +3,11 @@
 Team:
 
 Adam Connor
+
 Amadeus Karna
+
 Jesse Huang
+
 Madhav Baghla
 
 Open **`starter_code_cse151b_comp.ipynb`** to get started.
