@@ -1,5 +1,12 @@
 # CSE 151B Competition — Starter Code
 
+Team:
+
+Adam Connor
+Amadeus Karna
+Jesse Huang
+Madhav Baghla
+
 Open **`starter_code_cse151b_comp.ipynb`** to get started.
 
 The notebook covers environment setup, inference with Qwen3-4B-Thinking (INT8), and scoring against the public dataset.
