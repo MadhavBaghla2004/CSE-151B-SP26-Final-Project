@@ -644,11 +644,6 @@ class Judger:
 
     def auto_judge(self, pred, gold, options, type_sequence=None, precision=1e-8):
 
-        def handler(signum, frame):
-            raise Exception("Time out!")
-
-        signal.signal(signal.SIGALRM, handler)
-
         # TODO: adjust extract answer patterns accordingly
         extracted_pred = self.extract_ans(pred)
         if not extracted_pred: # no answer can be extracted in model's output
@@ -731,7 +726,8 @@ class Judger:
             except:
                 pass
             finally:
-                signal.alarm(0)
+                if hasattr(signal, 'alarm'):
+                    signal.alarm(0)
         return False
 
 
