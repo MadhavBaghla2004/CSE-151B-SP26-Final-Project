@@ -1,25 +1,14 @@
-# CSE 151B Competition — Starter Code
+# CSE 151B SP26 Kaggle Competition
 
-Team:
+**Team:** AAMJ — Adam Connor, Amadeus Karna, Madhav Baghla, Jesse Huang
 
-Adam Connor
+**GPU & inference time:** NVIDIA T4 (15 GB VRAM). Approximate total inference time: 4–6 hours on the full private test set.
 
-Amadeus Karna
+**Model weights:** Downloaded automatically from HuggingFace on first run. Accept the model license at https://huggingface.co/Qwen/Qwen3-4B and set your `HF_TOKEN` environment variable (or Colab/Kaggle secret) before running.
 
-Jesse Huang
-
-Madhav Baghla
-
-Open **`starter_code_cse151b_comp.ipynb`** to get started.
-
-The notebook covers environment setup, inference with Qwen3-4B-Thinking (INT8), and scoring against the public dataset.
-
-## Contents
-
-| File | Description |
-|---|---|
-| `starter_code_cse151b_comp.ipynb` | Main entry point |
-| `judger.py` | Response scoring logic |
-| `utils.py` | Utilities used by `judger.py` |
-| `data/public.jsonl` | Public dataset with ground-truth answers |
-| `results/` | Output JSONL files written at runtime |
+**Reproducing results:** Call `run_inference()` from Python:
+```python
+from run_inference import run_inference
+run_inference()
+```
+Or run directly from the command line: `python run_inference.py`
